@@ -125,6 +125,10 @@
     justify-content: center;
 }
 
+.forms-side-image {
+    background-color: rgb(184, 184, 254);
+}
+
 </style>
 </head>
 <body> 
@@ -159,26 +163,26 @@
            Besides, comments make it easy for the programmer to remember the complex things added to the code.</p> 
     </section> 
 
-    <div>
-        <h4 class="bold-text">Meet the Team</h4>
-
-        <div class="employee-1">
-            <div>  
-            <img class="employee-1-image" src="www/images/CEO.jpg" alt="Employee 1" width="500">  
-            <p>Collins Aning - CEO</p> 
-            </div> 
+    <div>  
+        <h4 class="bold-text">Meet the Team</h4>  
+    
+        <div class="team-container" style="display: flex; justify-content: space-around;">  
+            <div class="employee-1">  
+                <div>  
+                    <img class="employee-1-image" src="www/images/CEO.jpg" alt="Employee 1" style="width: 300px; height: 300px;">  
+                    <p>Collins Aning - CEO</p>   
+                </div>   
+            </div>  
+            <div class="employee-2">  
+                <img class="employee-2-image" src="www/images/Manager.jpg" alt="Employee 2" style="width:  300px; height: 300px;">  
+                <p>Prince de Coder - Manager</p>  
+            </div>  
+            <div class="employee-3">  
+                <img class="employee-3-image" src="www/images/Secretary.jpg" alt="Employee 3" style="width:  300px; height: 300px;">  
+                <p>Emmanuel Okyere - Secretary</p>  
+            </div>  
         </div>  
-        <div class="employee-2">  
-            <img class="employee-2-image" src="www/images/Manager.jpg" alt="Employee 2">  
-            <p>Prince de Coder - Manager</p>  
-        </div>  
-        <div class="employee-3">  
-            <img class="employee-3-image" src="www/images/Secretary.jpg" alt="Employee 3">  
-            <p>Emmanuel Okyere - Secretary</p>  
-        </div>  
-
     </div>
-
     <section>
         <aside>
             <h4 class="text-cours">Our Vision</h4>
@@ -193,20 +197,35 @@
 
 
     <form> 
-        <h5 class="heading-3">To Join the Team🤼‍♂️ ¤fill out the forms below¤</h5> 
-            <div class="cours"> 
-                <label>Your Name:</label> 
-                <input class="name-space" type="text"> 
-            </div> 
-            <div class="cours"> 
-                <label>Your Email:</label> 
-                <input class="space" type="email"> 
-            </div> 
-            <div class="cours"> 
-                <label>Your Number:</label> 
-                <input class="space" type="number"> 
+        <h3>To Join the Team🤼‍♂️ ¤fill out the forms below¤</h3> 
+        <div class="forms-side-image">
+            <div class="forms-structure"> 
+                    <div class="form-group">  
+                        <label for="name">Your Name:</label>  
+                        <input type="text" id="name" name="name" required>  
+                    </div>  
+                    <div class="form-group">  
+                        <label for="email">Your Email Address:</label>  
+                        <input type="email" id="email" name="email" required>  
+                    </div>  
+                    <div class="form-group">  
+                        <label for="inquiry">Purpose of the Message:</label><br>  
+                        <input type="radio" id="inquiry" name="inquiry" value="General Inquiry">  
+                        <label for="general">General Inquiry</label><br>  
+                        <input type="radio" id="suggestion" name="inquiry" value="Website Suggestion">  
+                        <label for="suggestion">Website Suggestion</label>  
+                    </div>  
+                    <div class="form-group">  
+                        <label for="message">Your Message:</label><br>  
+                        <textarea id="message" name="message" rows="4" required></textarea>  
+                    </div>  
+                    <div class="form-group">  
+                        <input type="checkbox" id="subscribe" name="subscribe">  
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>  
+                    </div>  
+                    <button type="submit">Submit</button>  
+                </form>  
             </div>
-        </form> 
     </main>
     
     <footer>
