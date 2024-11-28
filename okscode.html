@@ -144,6 +144,57 @@
     transform: scale(1.05);
 }
 
+body {  
+            font-family: Arial, sans-serif;  
+            background-color: #f5f7fa;  
+            color: #333;  
+            margin: 0;  
+            padding: 20px;  
+        }  
+        h2 {  
+            color: #2c3e50;  
+        }  
+        .form-group {  
+            margin-bottom: 15px;  
+        }  
+        label {  
+            display: block;  
+            font-weight: bold;  
+            margin-bottom: 5px;  
+        }  
+        input[type="text"],  
+        input[type="email"],  
+        textarea {  
+            width: 100%;  
+            padding: 10px;  
+            border: 1px solid #ccc;  
+            border-radius: 4px;  
+            transition: border-color 0.3s;  
+        }  
+        input[type="text"]:focus,  
+        input[type="email"]:focus,  
+        textarea:focus {  
+            border-color: #3498db;  
+            outline: none;  
+        }  
+        input[type="radio"],  
+        input[type="checkbox"] {  
+            margin-right: 5px;  
+        }  
+        button {  
+            background-color: #3498db;  
+            color: white;  
+            border: none;  
+            padding: 10px 15px;  
+            border-radius: 4px;  
+            cursor: pointer;  
+            font-size: 16px;  
+            transition: background-color 0.3s;  
+        }  
+        button:hover {  
+            background-color: #2980b9;  
+        }  
+
 </style>
 </head>
 <body> 
@@ -211,35 +262,40 @@
     </section>
 
 
-    <form> 
-        <h2>To Join the Team🤼‍♂️ ¤fill out the forms below¤</h2> 
-        <div class="forms-side-image">
-            <div class="forms-structure"> 
-                    <div class="form-group">  
-                        <label for="name">Your Name:</label>  
-                        <input type="text" id="name" name="name" required>  
-                    </div>  
-                    <div class="form-group">  
-                        <label for="email">Your Email Address:</label>  
-                        <input type="email" id="email" name="email" required>  
-                    </div>  
-                    <div class="form-group">  
-                        <label for="inquiry">Purpose of the Message:</label><br>  
-                        <input type="radio" id="inquiry" name="inquiry" value="General Inquiry">  
-                        <label for="general">General Inquiry</label><br>  
-                        <input type="radio" id="suggestion" name="inquiry" value="Website Suggestion">  
-                        <label for="suggestion">Website Suggestion</label>  
-                    </div>  
-                    <div class="form-group">  
-                        <label for="message">Your Message:</label><br>  
-                        <textarea id="message" name="message" rows="4" required></textarea>  
-                    </div>  
-                    <div class="form-group">  
-                        <input type="checkbox" id="subscribe" name="subscribe">  
-                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>  
-                    </div>  
-                    <button type="submit">Submit</button>  
-                </form>  
+    <form>   
+        <h2>Join the Team 🤼‍♂️</h2>   
+        <h3>Please fill out the form below to get started:</h3>  
+        
+        <div class="form-group">  
+            <label for="name">Your Name:</label>  
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">  
+        </div>  
+        
+        <div class="form-group">  
+            <label for="email">Your Email Address:</label>  
+            <input type="email" id="email" name="email" required placeholder="example@example.com">  
+        </div>  
+        
+        <div class="form-group">  
+            <label>Purpose of the Message:</label><br>  
+            <input type="radio" id="general" name="inquiry" value="General Inquiry" required>  
+            <label for="general">General Inquiry</label><br>  
+            <input type="radio" id="suggestion" name="inquiry" value="Website Suggestion">  
+            <label for="suggestion">Website Suggestion</label>  
+        </div>  
+        
+        <div class="form-group">  
+            <label for="message">Your Message:</label><br>  
+            <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>  
+        </div>  
+        
+        <div class="form-group">  
+            <input type="checkbox" id="subscribe" name="subscribe">  
+            <label for="subscribe">Subscribe me to the monthly newsletter</label>  
+        </div>  
+        
+        <button type="submit">Submit</button>  
+    </form>
             </div>
     </main>
     
